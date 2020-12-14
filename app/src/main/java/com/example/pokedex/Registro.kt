@@ -38,7 +38,7 @@ class Registro: AppCompatActivity() {
                             Toast.LENGTH_SHORT).show()
                 }
                 else {
-                    var user = Usuario(0, txtUserName.text.toString(), txtPassword2.text.toString(), txtemail.text.toString())
+                    var user = Usuario(0, txtUserName.text.toString(), txtemail.text.toString(), txtPassword2.text.toString())
                     datasource.newUsuario(user._username, user._email, user._password)
                     datosUsuario = user
                     var intent = Intent(this, ListadoPokemon::class.java)

@@ -9,7 +9,7 @@ val versionDB = 1
 
 class DbOpenHelper(context: Context) : SQLiteOpenHelper(context, nombreDB, null, versionDB) {
 
-    //adb -s A4N4C19318014465 uninstall com.example.proyecto3
+    //adb -s A4N4C19318014465 uninstall com.example.pokedex
 
     override fun onCreate(db: SQLiteDatabase?){
         db!!.execSQL("""
@@ -17,14 +17,14 @@ class DbOpenHelper(context: Context) : SQLiteOpenHelper(context, nombreDB, null,
                 id integer primary key autoincrement,
                 username text not null,
                 email text not null,
-                password text not null,
+                password text not null
             )
             """.trimIndent())
 
         db!!.execSQL("""
             create table tblFavorites(
                 idUsuario integer,
-                idPokemon integer,
+                idPokemon integer
             )
             """.trimIndent())
 

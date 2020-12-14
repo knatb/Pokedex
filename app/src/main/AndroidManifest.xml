@@ -17,6 +17,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Registro"
+            android:configChanges="orientation"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ListadoPokemon"
+            android:configChanges="orientation"
+            android:parentActivityName=".ListadoPokemon"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
