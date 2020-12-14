@@ -76,6 +76,7 @@
 
     <Button
         android:id="@+id/button"
+        android:onClick="login"
         android:layout_width="200dp"
         android:layout_height="60dp"
         android:layout_marginStart="156dp"
@@ -100,6 +101,7 @@
 
     <Button
         android:id="@+id/button2"
+        android:onClick="goToRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Regístrate Aquí"
